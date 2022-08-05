@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GDSC IIIT Agartala</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"
+    />
+
+    <style>
+        :root {
+           --size: 1.2;
+        }
+        </style>
+    
+  </head>
+  <body>
+<template id="greetings">
+Welcome to the Terminal of GDSC Club of Indian Institute of Information Technology - Agartala
+
+Made with ❤️ by Ansh Goyal
+
+Start typing any of the available commands:
+
+- events
+- contact
+- team
+        </template>
+
+        <template id="contact">You can contact us at gdsciiitagartala@gmail.com
+</template>
+
+        <template id="events">There are currently no upcoming events.
+</template>
+
+        <template id="team">Enter the commands below to search the leads of respective domains
+
+- webdev
+- appdev
+- cloud
+- cp 
+- dsa
+- ai
+- management
+</template>
+
+<template id="webdev">- Ansh Goyal
+- Md. Furquan Ansari
+- Deepak Kushwaha
+- Praveen Kumar
+</template>
+<template id="appdev">- Vishal Singh
+- Prashant Ambati
+</template>
+<template id="cloud">- Praveen Kumar
+</template>
+<template id="cp">- Ansh Goyal
+- Azmat Alam
+- Hariom Gupta
+</template>
+<template id="dsa">- Satvik Vashisht
+- Azmat Alam
+</template>
+<template id="ai">- Chintamani Chourase
+- Atharva Mujumdar
+</template>
+<template id="management">- Satvik Vashisht
+- Prashant Ambati
+- Parasara Naik
+- Praveen Kumar
+</template>
+
+    <script>
+        
+        $('body').terminal({
+            contact: function() {
+                this.echo(contact.innerHTML, {typing: true, delay: 30});
+            },
+            events: function() {
+                this.echo(events.innerHTML, {typing: true, delay: 30});
+            },
+            team: function() {
+                this.echo(team.innerHTML, {typing: true, delay: 30});
+            },
+            webdev: function() {
+                this.echo(webdev.innerHTML, {typing: true, delay: 30});
+            },
+            appdev: function() {
+                this.echo(appdev.innerHTML, {typing: true, delay: 30});
+            },
+            cloud: function() {
+                this.echo(cloud.innerHTML, {typing: true, delay: 30});
+            },
+            cp: function() {
+                this.echo(cp.innerHTML, {typing: true, delay: 30});
+            },
+            dsa: function() {
+                this.echo(dsa.innerHTML, {typing: true, delay: 30});
+            },
+            ai: function() {
+                this.echo(ai.innerHTML, {typing: true, delay: 30});
+            },
+            management: function() {
+                this.echo(management.innerHTML, {typing: true, delay: 30});
+            },
+        }, {
+            greetings: greetings.innerHTML
+        });
+
+        </script>
+
+  </body>
+</html>
