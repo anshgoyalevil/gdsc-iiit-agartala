@@ -1,1 +1,1 @@
-# gdsc-iiit-agartala
+# GDSC IIIT Agartala
